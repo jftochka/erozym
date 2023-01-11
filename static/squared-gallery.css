@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+body { margin: 6vw; font-family: Avenir, Roboto, Helvetica, san-serif; 
+  font-size: 90%; background: #ffffff;}
+
+main { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28vw, 30vw));
+  grid-gap: 1vw;
+}
+article {
+  display: flex;
+  flex-flow: column;
+  background: white;
+  padding: 1vw;
+}
+img {
+  order: -1;
+  align-self: center;
+  width: 100%;
+}
