@@ -1,0 +1,16 @@
+@font-face {
+    font-family: trial;
+    src: url("static/fonts/e-UkraineHead/e-UkraineHead-Regular.eot");
+    src: url("static/fonts/e-UkraineHead/e-UkraineHead-Regular.eot") format('embedded-opentype'),
+         url("static/fonts/e-UkraineHead/e-UkraineHead-Regular.woff2") format("woff2"),
+         url("static/fonts/e-UkraineHead/e-UkraineHead-Regular.otf") format("opentype");
+    font-weight: regular;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(0, 0%, 93%);
+    color: hsl(0, 0%, 10%);
+    line-height: 1.5;
+    font-family: "e-Ukraine Head", sans-serif;
+  }

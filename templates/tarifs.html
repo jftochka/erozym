@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Пакети послуг та ціни</title>
+<style type="text/css">
+  * { box-sizing: border-box;}
+  main { 
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    
+    }
+  .main { 
+    display: flex;
+    flex-flow: column;
+    background: #00993a;
+    /*padding: 0.25vw;*/
+    width: 30vw;
+    height: 30vw;
+    border-radius: 25px;
+    background: rgba( 255, 255, 255, 0.33 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 42, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border: 1px solid rgba( 255, 255, 255, 1 );
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 30vw));
+    grid-gap: 1vw;
+   }
+  .glass {
+    width : 30vw;
+    height : 25vw;
+    background : rgb(255, 255, 255, 0.25);
+    box-shadow : 0 8px 32px 0 rgb(31, 38, 135, 0.37);
+    backdrop-filter : blur(4px);
+    border-radius : 0 0 25px 25px;
+    overflow : hidden;
+    border-radius : 0 0 25px 25px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    border : rgb(255, 255, 255, 0.18) solid 1px;
+    color : #ffffff;
+    }
+    body {
+    display : flex;
+    background-color : #ff3333;
+    align-items : center;
+    justify-content : center;
+    }
+    main { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 30vw));
+    grid-gap: 0.5vw;
+    }
+
+
+   .glass {
+    width : 30vw;
+    height : 25vw;
+    background : rgb(255, 255, 255, 0.25);
+    box-shadow : 0 8px 32px 0 rgb(31, 38, 135, 0.37);
+    backdrop-filter : blur(4px);
+    border-radius : 0 0 25px 25px;
+    overflow : hidden;
+    border-radius : 0 0 25px 25px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    border : rgb(255, 255, 255, 0.18) solid 1px;
+    color : #ffffff;
+    }
+
+   .notepad {
+    /*margin-top : 5vw;*/
+    width : 30vw;
+    box-shadow : 10px 10px 40px rgb(0, 0, 0, 0.15);
+    border-radius : 0 0 25px 25px;
+    overflow : hidden;
+    border-radius : 25px 25px 25px 25px;
+    /*margin:  1vw;*/
+    /*margin-top: 5vw;*/
+    }
+   .plesen {
+    width : 30vw;
+    height : 5vw;
+    background : #ffffff;
+    border-radius : 25px 25px 0 0;
+    }
+   .plesen {
+    position : relative;
+    }
+   .plesen::before, .plesen::after {
+    background : linear-gradient(60deg, #000000 46%, #ffffff 66%), linear-gradient(108deg, #000000 16%, #ffffff 17%), linear-gradient(120deg, #000000 14%, #ffffff 17%), linear-gradient(36deg, #000000 97%, #ffffff 107%), linear-gradient(154deg, #000000 63%, #ffffff 70%), linear-gradient(176deg, #000000 54%, #ffffff 65%), linear-gradient(174deg, #000000 83%, #ffffff 84%), linear-gradient(30deg, #000000 41%, #ffffff 50%), linear-gradient(117deg, #000000 29%, #ffffff 34%), linear-gradient(90deg, #000000 87%, #ffffff 91%), linear-gradient(147deg, #000000 21%, #ffffff 23%), linear-gradient(173deg, #000000 7%, #ffffff 23%), linear-gradient(110deg, #000000 10%, #ffffff 19%), linear-gradient(160deg, #000000 2%, #ffffff 22%), linear-gradient(44deg, #000000 80%, #ffffff 94%), linear-gradient(85deg, #000000 11%, #ffffff 26%), linear-gradient(168deg, #000000 9%, #ffffff 18%), linear-gradient(83deg, #000000 96%, #ffffff 98%), linear-gradient(124deg, #000000 52%, #ffffff 67%), linear-gradient(85deg, #000000 31%, #ffffff 40%), linear-gradient(116deg, #000000 23%, #ffffff 31%), linear-gradient(145deg, #000000 97%, #ffffff 117%), linear-gradient(100deg, #000000 30%, #ffffff 50%), linear-gradient(99deg, #000000 30%, #ffffff 50%), linear-gradient(127deg, #000000 13%, #ffffff 32%), linear-gradient(53deg, #000000 13%, #ffffff 19%), linear-gradient(147deg, #000000 81%, #ffffff 83%), linear-gradient(122deg, #000000 37%, #ffffff 52%), linear-gradient(112deg, #000000 60%, #ffffff 66%), linear-gradient(66deg, #000000 100%, #ffffff 103%), linear-gradient(123deg, #000000 99%, #ffffff 100%), linear-gradient(164deg, #000000 29%, #ffffff 39%), linear-gradient(45deg, #000000 100%, #ffffff 114%), linear-gradient(44deg, #000000 7%, #ffffff 25%), linear-gradient(147deg, #000000 49%, #ffffff 51%), linear-gradient(167deg, #000000 68%, #ffffff 70%), linear-gradient(153deg, #000000 52%, #ffffff 70%), linear-gradient(34deg, #000000 62%, #ffffff 69%), linear-gradient(59deg, #000000 31%, #ffffff 42%);
+    background-blend-mode : difference;
+    content : '';
+    display : block;
+    position : absolute;
+    top : 0;
+    right : 0;
+    bottom : 0;
+    left : 0;
+    }
+   .plesen::after {
+    filter : invert(1);
+    opacity : 0.5;
+    top : 1px;
+    }
+   .color-overlay {
+    background-color: #00993a;
+    mix-blend-mode : overlay;
+    position : absolute;
+    top : 0;
+    left : 0;
+    bottom : 0;
+    right : 0;
+    z-index : 1;
+    }
+   .plesen {
+    line-height : 1.5;
+    min-height : 5vw;
+    padding : 2rem;
+    text-align : center;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+
+<body>
+  <main>
+    <div class="main"><div class="notepad">
+        <div class="plesen"></div>
+        <div class="glass"><h3>Hello, this is a glass.<br>Click to write your message.</h3></div>
+    </div>
+    </div>
+    <div class="main"><div class="notepad">
+        <div class="plesen"></div>
+        <div class="glass"><h3>Hello, this is a glass.<br>Click to write your message.</h3></div>
+    </div>
+    </div>
+    <div class="main"><div class="notepad">
+        <div class="plesen"></div>
+        <div class="glass"><h3>Hello, this is a glass.<br>Click to write your message.</h3></div>
+    </div>
+    </div>
+  </main>
+</body>
+{% endblock %}

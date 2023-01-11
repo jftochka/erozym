@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="UK">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width", user-scalable=no, initial-scale=1.0>  
+      {% block meta %}{% endblock %}
+      {% block n1 %} {% endblock %}
+      <link rel="stylesheet" href="/static/css/lib/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+      <link rel="stylesheet" href="/static/Advanced-NavBar---Multi-dropdown.css">
+      <link rel="stylesheet" href="/static/css/Menu-dropdown-xl.css">
+      <link rel="stylesheet" href="/static/css/styles.css">
+      <link rel="stylesheet" href="/static/css/plesen.css">
+      <style type="text/css"> body{width: 100%; background-image:url("/static/imgs/bg-darkkkk.png");background-repeat:repeat-y; }</style>
+      {% block title %} {% endblock %}
+      <navbar>
+        <div id="Menu-dropdown-xl" class="pulldown"><a href="/">Головна</a>
+          <div id="dropdown1" class="subnav"><a class="subnavbtn" href="/tarifs" style="border-style: none;">Пакети та ціни</a>
+          <div class="subnav-content" style="--bs-body-color: #151515;color: var(--bs-black);">
+            <a href="/ukrainska-mova-i-literatura" style="--bs-body-colorcolor: #151515;border-style: none; color:#ffffff;">Українська мова та література</a>
+            <a href="/istoriya-ukrainy" style="--bs-body-color: #151515;border-style: none;color: #ffffff;">Історія України</a>
+            <a href="/angliyska-mova" style="--bs-body-color: #151515;border-style: none;color: #ffffff;">Англійська мова</a>
+            <a href="/mathematika" style="--bs-body-color: #151515;border-style: none;color: #ffffff;">Математика</a>
+            <a href="/fizika" style="--bs-body-color: #151515;border-style: none;color: #ffffff;">Фізика</a>
+            <a href="/himiya" style="--bs-body-color: #151515;border-style: none;color: #ffffff;">Хімія</a>
+            <a href="/biologia" style="--bs-body-color: #151515;border-style: none;color: #ffffff;">Біологія</a>
+            <a href="/geografia" style="--bs-body-color: #151515;border-style: none;color: #ffffff;">Географія</a></div>
+          </div>
+          <div id="dropdown2" class="subnav"><a class="subnavbtn" href="/e-pidtrymka" style="border-style: none;">єПідтримка</a>
+            <div class="subnav-content" style=" --bs-body-color: #151515; color: var(--bs-black);">
+              <a href="/contacts" style="--bs-body-color: #151515;border-style: none;color: #ffffff;">Контакти</a>
+              <a href="/vacancy" style="--bs-body-color: #151515;border-style: none;color: #ffffff;">Вакансії</a>
+            </div>
+          </div>
+        </div>
+      </navbar>
+      {% block body %} {% endblock %}
+      
+      <script src="https://cdnjs.com/libraries/p5.js"></script>
+      <script src="/static/js/lib/jquery.min.js"></script>
+      <script src="/static/js/lib/bootstrap.min.js"></script>
+      <script src="/static/js/Advanced-NavBar---Multi-dropdown.js"></script>
+    </body>
+</html>
+</html>
